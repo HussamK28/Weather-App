@@ -1,0 +1,40 @@
+.infoBox {
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 8px; /* Set border-radius for rounded corners */
+  padding: 10px;
+  margin-top: 10px;
+}
+.temp {
+  text-align: right;
+}
+
+.search {
+text-align: center;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 10px;
+  width: 800px;
+}
+
+.inputBox {
+  margin-top: 105px;
+  display: inline;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+
+.searchButton {
+  display: inline;
+}
