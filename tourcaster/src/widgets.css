@@ -1,0 +1,252 @@
+/*
+	@name desktop___1
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial";
+    overflow-x: hidden;
+  }
+  
+  /* Ensure images are responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Only edit this if you know what you are doing! */
+  div { position: absolute; }
+  
+  #content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+  
+  #_bg__desktop___1 {
+      top: 0px;
+      left: 0px;
+      width: 1440px;
+      height: 1024px;
+      background: -webkit-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+      background: -o-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+      background: -moz-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+      background: -ms-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+      background: linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+  }
+  
+  
+  #sunset {
+      top: 128px;
+      left: 655px;
+      width: 158.3px;
+      height: 53.3px;
+      overflow: hidden;
+      font-family: Jura;
+      font-size: 33px;
+      font-weight: bold;
+      text-align: left;
+      color:#FFFFFF;
+  }
+  
+  
+  #__the_apparent_descent_of_the_sun {
+      top: 198px;
+      left: 535px;
+      width: 389.2px;
+      height: 31.2px;
+      overflow: hidden;
+      font-family: Jura;
+      font-size: 22px;
+      text-align: left;
+      color:#FFF7F7;
+  }
+  
+  
+  #sunset_time_ {
+      top: 342px;
+      left: 536px;
+      width: 166.2px;
+      height: 32.2px;
+      overflow: hidden;
+      font-family: Jura;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: left;
+      color:#FFFFFF;
+  }
+  
+  
+  #remaining_daylight_ {
+      top: 382px;
+      left: 536px;
+      width: 202.8px;
+      height: 26.8px;
+      overflow: hidden;
+      font-family: Jura;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      color:#FFFBFB;
+  }
+  
+  
+  #arrow_2 {
+      top: 99.11px;
+      left: 544px;
+      width: 47.5px;
+      height: 14.73px;
+      position: relative;
+  
+  }
+  
+  
+  #line_2 {
+      top: 297px;
+      left: 486px;
+      width: 357px;
+      height: 3px;
+      position: relative;
+  }
+  
+  
+  #outline {
+      top: 2px;
+      left: 2px;
+      width: 28px;
+      height: 28px;
+      position: relative;
+  
+  }
+  
+    
+  
+  #_32_partly_cloudy {
+      top: 96px;
+      left: 699px;
+      width: 32px;
+      height: 32px;
+  }
+  
+  #_bg___32_partly_cloudy_ek1 {
+      top: 0px;
+      left: 0px;
+      width: 32px;
+      height: 32px;
+  }
+  
+  
+  
+  
+  
+  #below_the_horizon_ {
+      top: 235px;
+      left: 616px;
+      width: 231.2px;
+      height: 80.2px;
+      overflow: hidden;
+      font-family: Jura;
+      font-size: 22px;
+      text-align: left;
+      color:#FFF7F7;
+  }
+  
+  #frame_12 {
+      top: 309px;
+      left: 670px;
+      width: 100px;
+      height: 100px;
+  }
+  
+  #_bg__frame_12_ek1 {
+      top: 0px;
+      left: 0px;
+      width: 100px;
+      height: 100px;
+  }
+  
+  
+  
+  /* Add your custom CSS here */
+  
+  
+  /* Media query for phones */
+  @media only screen and (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+      
+  
+      
+      #content-container {display: block; position: relative; width: 480px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+  
+      
+      /* Adjust specific elements for smaller screens */
+      #sunset {
+      
+        top: 80px; /* Adjust top position */
+        left: 180px; /* Adjust left position */
+        font-size: 20px; /* Adjust font size */
+      }
+  
+  
+          
+      #__the_apparent_descent_of_the_sun {
+        top: 120px; /* Adjust top position */
+        left: 78px; /* Adjust left position */
+        font-size: 18px; /* Adjust font size */
+      }
+      
+      #below_the_horizon_ {
+          top: 140px; /* Adjust top position */
+          left: 140px; /* Adjust left position */
+          font-size: 18px; /* Adjust font size */
+      }
+      /* Adjust other elements as needed */
+  
+  
+          
+  
+  
+  
+      #arrow_2 {
+          top: 40px; /* Adjust top position */
+          left: 25px; /* Adjust left position */
+          width: 47.5px;
+          height: 14.73px;
+      
+      }
+  
+  
+      #line_2 {
+          top: 170px; /* Adjust top position */
+          left: 5px; /* Adjust left position */
+          height:2px;
+      }
+  
+      #outline {
+          top: 40px; /* Adjust top position */
+          left: 50px; /* Adjust left position */
+          width: 47.5px;
+          height: 14.73px;
+  
+      }
+  
+  
+          
+      #sunset_time_ {
+          top: 215px;
+          left: 25px;
+          font-size: 18px; /* Adjust font size */
+  
+      }
+  
+      #remaining_daylight_ {
+          top: 245px;
+          left: 25px;
+          font-size: 18px; /* Adjust font size */
+  
+      }
+      
+      
+  
+    }
+  
+  
+  
