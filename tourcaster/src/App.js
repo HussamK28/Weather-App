@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
 import './App.css';
+import SearchBar from './Components/searchBar';
+import Landmarks from './Components/Landmarks'
 
-function App() {
+const App = () => {
+
+  const searchChange = (searchData) => {
+    console.log(searchData)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <SearchBar onSearchChange={searchChange}/>
+      <br />
+      <Landmarks /> 
+      <br />
+
     </div>
   );
-}
+};
 
 export default App;

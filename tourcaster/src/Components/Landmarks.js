@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'; // imported React
 import LocationCityRoundedIcon from '@mui/icons-material/LocationCityRounded'; // imported city button
-import SearchBar from './searchBar';
 import './Landmarks.css'
 
 const Landmarks = () => {
@@ -40,6 +39,8 @@ const Landmarks = () => {
         setCity(e.target.value); // sets setCity variable to user's input
     };
 
+    /* Below is my HTML code for the webpage. It has an input box so the user can enter a city name and hits the building icon to search.
+    It then gets the 1st-3rd values of landmarkData, its address, an icon and a description */
     return (
         <div className='search'>
             <div className='inputBox'>

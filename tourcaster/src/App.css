@@ -2,37 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background: -webkit-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+	background: -o-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+	background: -moz-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+	background: -ms-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
+	background: linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
 }
