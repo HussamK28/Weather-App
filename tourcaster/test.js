@@ -1,6 +1,6 @@
 // Import React, useState, useEffect hooks, CSS, and Forecast component.
 import React, { useState, useEffect } from "react";
-import './Home.css'
+import './App.css';
 import Forecast from "./Forecast";
 
 // Define API key and base URL for weather data.
@@ -9,7 +9,7 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/",
 };
 
-const Home = ()  => {
+function App() {
   // State for search input, weather data, forecast data, and type of forecast (hourly or weekly).
   const [search, setSearch] = useState("");
   const [weather, setWeather] = useState({});
@@ -75,4 +75,4 @@ const Home = ()  => {
   );
 }
 
-export default Home;
+export default App;

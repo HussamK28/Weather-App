@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import NavBar from './Components/Navbar';
 import SearchBar from './Components/SearchBar';
 import Landmarks from './Components/Landmarks';
