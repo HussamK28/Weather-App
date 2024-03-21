@@ -1,6 +1,6 @@
 .infoBox {
   border: 1px solid #ccc;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   color: #fff;
   border-radius: 8px; /* Set border-radius for rounded corners */
   padding: 10px;
@@ -8,6 +8,7 @@
 }
 .temp {
   text-align: right;
+  size: 20px;
 }
 
 .search {
@@ -37,4 +38,12 @@ text-align: center;
 
 .searchButton {
   display: inline;
+}
+
+.backArrow {
+  padding: 500000;
+}
+.cityName {
+  text-align: left;
+  size: 24;
 }

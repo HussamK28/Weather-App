@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './searchBar.css'; // Import CSS file
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from '@mui/icons-material/Search'; // import searchIcon button
+import backArrow from './BackArrow.png'
 
 const SearchBar = () => {
     const [city, setCity] = useState('');
@@ -27,19 +28,24 @@ const SearchBar = () => {
         e.preventDefault();
         fetchData();
     };
+
+    const clickBackArrow = () => {
+        window.location.href = "https://www.google.co.uk/?client=safari"
+    }
     return (
         <div className='search'>
+            <img src={backArrow} alt='backArrow' className='backArrow'width={50} onClick={clickBackArrow}/>
             <div className='inputBox'>
                 <input type="text" placeholder="Enter city name" value={city} onChange={handleInputChange} />
-                <div className='searchButton'><SearchIcon onClick={handleSubmit} /></div>
+                <div className='searchButton'><SearchIcon onChange={handleSubmit} /></div>
             </div>
             {weatherData ? (
                 <>
                     <div className='infoBox'>
-                        <h2>{weatherData.name}, {weatherData.sys.country}</h2>
-                        <h3>{new Date(weatherData.dt * 1000).toLocaleString()}</h3>
-                        <h3>{weatherData.timezone_offset}</h3>
+                        <h1 className='cityName'>{weatherData.name}, {weatherData.sys.country}</h1>
                         <h2 className='temp'>{weatherData.main.temp}°C</h2>
+                        <h2 className='maxTemp'>{weatherData.main.temp_max}°C</h2>
+                        <h2 className='minTemp'>{weatherData.main.temp_min}°C</h2>
                     </div>
                 </>
             ) : null}
