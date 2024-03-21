@@ -8,12 +8,18 @@
 }
 .temp {
   text-align: right;
-  size: 20px;
+  font-size: 36px;
+}
+
+.maxTemp, .minTemp {
+  text-align: right;
+  font-size: medium;
 }
 
 .search {
 text-align: center;
 }
+
 
 .search input {
   background-color: white;
@@ -45,5 +51,5 @@ text-align: center;
 }
 .cityName {
   text-align: left;
-  size: 24;
+  font-size: 48px;
 }

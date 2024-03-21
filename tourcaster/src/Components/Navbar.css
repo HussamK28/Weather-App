@@ -1,0 +1,11 @@
+nav { 
+        background-color: rgb(175, 223, 255);
+        font-size: 14pt;
+        text-align: center;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+  }
+

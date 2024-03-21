@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'; // imported React
-import LocationCityRoundedIcon from '@mui/icons-material/LocationCityRounded'; // imported city button
+import React, { useState } from 'react'; // imported React
 import './Landmarks.css'
 
 const Landmarks = () => {
@@ -45,16 +44,18 @@ const Landmarks = () => {
         <div className='search'>
             <div className='inputBox'>
                 <input type="text" placeholder="Enter city name" value={city} onChange={handleInputChange} /> 
-                <div className='searchButton'><LocationCityRoundedIcon onClick={handleSubmit} /></div>
+                <div className='searchButton'>
+                    <button onClick={handleSubmit} >Search For Landmarks</button>
+                </div>
+
             </div>
             {landmarkData ? (
-                <div className='infoBox'>
-                    <h1>Your nearest 3 landmarks are:</h1>
+                <div className='landmarkInfoBox'>
+                    <h1>Your nearest 3 landmarks in {city} are:</h1>
                     <div className='landmarkInfo'>
                     <img src={`${landmarkData[0].categories[0].icon.prefix}64${landmarkData[0].categories[0].icon.suffix}`} alt="Landmark Icon" />
                         <h2>{landmarkData[0].name}</h2>
                         <h3>{landmarkData[0].location.formatted_address}</h3>
-                        <p>{landmarkData[0].description}</p>
                         
                     </div>
                     <div className='landmarkInfo'>

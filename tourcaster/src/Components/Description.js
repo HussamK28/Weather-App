@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-export default function Description (fsqID) {
+const Description = () => {
 	const [desc, setDesc] = useState(null)
-	const fetchData = async () => {
+
+	const getDescription = async (fsqID) => {
         try {
             const options = {
                 method: 'GET',
@@ -25,3 +26,4 @@ export default function Description (fsqID) {
     };
 	return <p>{desc.description}</p>
 }
+export default Description;
