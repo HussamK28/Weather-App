@@ -2,34 +2,37 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './searchBar.css'; // Import CSS file
 import backArrow from './BackArrow.png'
-import Cookies from 'js-cookie';
 
 const SearchBar = () => {
-    const [city, setCity] = useState('');
-    const [weatherData, setWeatherData] = useState(null);
+    const [city, setCity] = useState(''); // creates city variable and setCity function
+    const [weatherData, setWeatherData] = useState(null);  // creates weatherData variable and setWeatherData function
+    // FetchData function which gets the API call
     const fetchData = async () => {
         try {
             const response = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=c395cc2852af511561efddfacf1ff5c2`
-            );
-            setWeatherData(response.data);
+            ); // API Call - which gets the user's input for city
+            setWeatherData(response.data); // setWeatherData function stores data from API
             console.log(response.data);
-            Cookies.set('city:', city)
         } catch (error) {
-            console.error(error);
+            console.error(error); // if API call does not work, then an error message occurs
         }
     };
     useEffect(() => {
-        fetchData();
+        fetchData(); 
     }, []);
     const handleInputChange = (e) => {
-        setCity(e.target.value);
+        setCity(e.target.value); // setCity function sets user's search
     };
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => { // when search button is clicked, function is carried out
         e.preventDefault();
-        fetchData();
+        fetchData(); // calls fetchData function
     };
 
+    /* Below is my HTML code:
+    We have our search bar and button where user enters the city name. 
+    The weatherData variable takes the data from the API docs
+    */
     return (
         <div className='search'>
             <div className='inputBox'>
