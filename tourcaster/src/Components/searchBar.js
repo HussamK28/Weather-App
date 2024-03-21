@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './searchBar.css'; // Import CSS file
 import backArrow from './BackArrow.png'
+import Cookies from 'js-cookie';
 
 const SearchBar = () => {
     const [city, setCity] = useState('');
@@ -13,6 +14,7 @@ const SearchBar = () => {
             );
             setWeatherData(response.data);
             console.log(response.data);
+            Cookies.set('city:', city)
         } catch (error) {
             console.error(error);
         }
@@ -41,10 +43,10 @@ const SearchBar = () => {
                 <>
                     <div className='infoBox'>
                         <h1 className='cityName'>{weatherData.name}, {weatherData.sys.country}</h1>
+                        <h2 className='desc'>{weatherData.weather[0].description}</h2>
                         <h2 className='temp'>{weatherData.main.temp}°C</h2>
                         <h2 className='maxTemp'>H:{weatherData.main.temp_max}°C</h2>
                         <h2 className='minTemp'>L:{weatherData.main.temp_min}°C</h2>
-                        <h3 className='desc'>{weatherData.description}</h3>
                     </div>
                 </>
             ) : null}

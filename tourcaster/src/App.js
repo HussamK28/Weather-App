@@ -7,10 +7,6 @@ import Home from './Components/Home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const App = () => {
-
-  const searchChange = (searchData) => {
-    console.log(searchData)
-  }
   
   return (
     <Router>
