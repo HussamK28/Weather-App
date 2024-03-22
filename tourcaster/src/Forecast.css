@@ -1,0 +1,104 @@
+Global font application
+body, input, button, p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.forecast-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  justify-content: center; 
+  align-content: start; 
+  width: 100%;
+  padding: 0 20px; 
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 180px;
+}
+
+
+.forecast-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.forecast-tabs button {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+.forecast-tabs button.active, .forecast-tabs button:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  /* Responsive adjustments for smaller screens */
+  .forecast-item, .forecast-tabs button {
+    padding: 6px;
+  }
+
+  .forecast-item img {
+    width: 50px; /* Even smaller images on small screens */
+    height: 50px;
+  }
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: 180px;
+}
+
+.forecast-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.forecast-item p {
+  color: #333;
+  font-size: 0.8rem;
+  margin: 4px 0;
+}
+
+.forecast-item .temp, .forecast-item .description {
+  font-weight: bold;
+  margin: 5px 0;
+}

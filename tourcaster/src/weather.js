@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useState } from 'react';
-import Widgets from './widgets'; // Importing the Widgets component from another file
-import './weather.css';
-import { otherWidget } from './widgets'; // Importing otherWidget from './widgets'
+import Widgets from './Widgets'; // Importing the Widgets component from another file
+import './Weather.css';
+import { otherWidget } from './Widgets'; // Importing otherWidget from './widgets'
 
 function Weather() {
   // State for input value and location

@@ -5,12 +5,12 @@ import Visibility from './new_visibility'
 import UV from './new_UV'
 import Pressure from './new_pressure'
 import Rain from './new_p_rain'
-import Widgets from './widgets';
-import Weather from './weather'
+import Widgets from './Widgets';
+import Weather from './Weather'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
  
 
-function App() {
+function Widgets_main() {
   return (
 
     
@@ -59,4 +59,4 @@ function App() {
 }
 
 
-export default App;
+export default Widgets_main;
