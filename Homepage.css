@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  background: linear-gradient(180deg, rgb(46, 79, 164) 0%, rgb(246, 197, 153) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.App-header {
+  width: 90%;
+  max-width: 600px;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.App-header h1, input[type="text"], button, .forecast-tabs button {
+  font-size: 2rem; 
+}
+
+input[type="text"], button {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px; 
+}
+
+button {
+  background-color: #ffffff;
+  color: #333;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+.forecast-tabs button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+}
+
+.forecast-tabs .active {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Forecast display adjustments */
+.forecast-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.forecast-container {
+  max-width: 95%; 
+  margin: 20px auto; 
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.forecast-item {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.forecast-item img {
+  width: 50px; 
+  height: 50px; 
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments for small devices */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 1.2rem; /* Smaller font size for small screens */
+  }
+
+  input[type="text"], button {
+    font-size: 0.9rem; /* Smaller font size for inputs and buttons */
+  }
+}
