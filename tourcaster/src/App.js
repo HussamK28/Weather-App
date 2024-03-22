@@ -4,6 +4,7 @@ import SearchBar from './Components/SearchBar';
 import Landmarks from './Components/Landmarks';
 import Home from './Components/Home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './App.css'
 
 const App = () => {
   

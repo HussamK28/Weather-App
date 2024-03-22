@@ -1,7 +1,8 @@
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './searchBar.css'; // Import CSS file
-import backArrow from './BackArrow.png'
+import GlobeLogo from './Globe.png'
 
 const SearchBar = () => {
     const [city, setCity] = useState(''); // creates city variable and setCity function
@@ -35,6 +36,7 @@ const SearchBar = () => {
     */
     return (
         <div className='search'>
+            <img src={GlobeLogo} alt='globe' width={50} /> <header className='header'>Weather By Location</header>
             <div className='inputBox'>
             <input type="text" placeholder="Enter city name" value={city} onChange={handleInputChange} />
             <div className='searchButton'>

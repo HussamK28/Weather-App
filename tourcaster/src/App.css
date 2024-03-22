@@ -1,15 +1,12 @@
 .App {
-  text-align: center;
-}
+    text-align: center;
+    background: linear-gradient(180deg, rgb(46, 79, 164) 0%, rgb(246, 197, 153) 100%);
+    min-height: 100vh;
 
-body {
-	top: 0px;
-	left: 0px;
-	width: 1440px;
-	height: 1024px;
-	background: -webkit-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
-	background: -o-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
-	background: -moz-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
-	background: -ms-linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
-	background: linear-gradient(-180.00000687207deg , rgba(46.66,79.71,164.69,1) 0%, rgba(246.5,197.9,153.04,1) 100%);
-}
+    align-items: center;
+    justify-content: center;
+    font-size: 27px; 
+    font-family: 'Arial', sans-serif;
+  }
+
+

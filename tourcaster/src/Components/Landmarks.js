@@ -1,8 +1,8 @@
-import React, { useState } from 'react'; // imported React
+import React, { useState, useEffect } from 'react'; // imported React
 import './Landmarks.css'
-
+import LandmarkIcon from './LandmarksIcon.png'
 const Landmarks = () => {
-    const [city, setCity] = useState(''); // array to set city variable
+    const [city, setCity] = useState(null); // array to set city variable
     const [landmarkData, setLandmarkData] = useState(null); // array to set landmark data
 
     const fetchData = async () => { // function to fetch data from API
@@ -29,6 +29,10 @@ const Landmarks = () => {
         }
     };
 
+    useEffect(() => {
+        fetchData(); 
+    }, []);
+
     const handleSubmit = async (e) => { // function when submit button is pressed
         e.preventDefault();
         await fetchData(); // calls the fetch data function
@@ -39,9 +43,10 @@ const Landmarks = () => {
     };
 
     /* Below is my HTML code for the webpage. It has an input box so the user can enter a city name and hits the building icon to search.
-    It then gets the 1st-3rd values of landmarkData, its address, an icon and a description */
+    It then gets the 1st-3rd values of landmarkData, its name, address, and an icon */
     return (
         <div className='search'>
+            <img src={LandmarkIcon} alt='globe' width={50} /><header className='header'>Landmarks</header>
             <div className='inputBox'>
                 <input type="text" placeholder="Enter city name" value={city} onChange={handleInputChange} /> 
                 <div className='searchButton'>
@@ -51,7 +56,7 @@ const Landmarks = () => {
             </div>
             {landmarkData ? (
                 <div className='landmarkInfoBox'>
-                    <h1>Your nearest 3 landmarks in {city} are:</h1>
+                    <h1>Your nearest 3 landmarks are:</h1>
                     <div className='landmarkInfo'>
                     <img src={`${landmarkData[0].categories[0].icon.prefix}64${landmarkData[0].categories[0].icon.suffix}`} alt="Landmark Icon" />
                         <h2>{landmarkData[0].name}</h2>

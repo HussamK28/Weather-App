@@ -1,11 +1,28 @@
-nav { 
-        background-color: rgb(175, 223, 255);
-        font-size: 14pt;
+nav {
+        background-color: rgb(0, 0, 0);
+        padding: 10px 20px;
         text-align: center;
-}
-
-li {
-    display: inline-block;
-    list-style-type: none;
-  }
-
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    nav ul li a:hover {
+        color: #fffb00;
+    }
+    
