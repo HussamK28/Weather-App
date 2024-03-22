@@ -1,6 +1,6 @@
 .infoBox {
   border: 1px solid #ccc;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   color: #fff;
   border-radius: 8px; /* Set border-radius for rounded corners */
   padding: 10px;
@@ -8,11 +8,18 @@
 }
 .temp {
   text-align: right;
+  font-size: 36px;
+}
+
+.maxTemp, .minTemp {
+  text-align: right;
+  font-size: medium;
 }
 
 .search {
 text-align: center;
 }
+
 
 .search input {
   background-color: white;
@@ -37,4 +44,21 @@ text-align: center;
 
 .searchButton {
   display: inline;
+}
+
+.backArrow {
+  padding: 500000;
+}
+.cityName {
+  text-align: left;
+  font-size: 48px;
+}
+.desc {
+  text-align: left;
+  font-size: 18px;
+}
+.header {
+  font-size: 48px;
+  font-family:'Courier New', Courier, monospace;
+  font-style: oblique;
 }
