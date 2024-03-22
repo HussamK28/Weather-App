@@ -1,0 +1,86 @@
+.unica-one-regular {
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+  
+
+  
+body {
+
+	width: 1349px;
+	height: 1024px;
+    background: linear-gradient(180deg, rgb(46.66, 79.71, 164.69) 0%, rgb(246.5, 197.9, 153.04) 100%);
+    background-color: rgba(255, 255, 255, 1);
+  
+}
+
+h1{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-family: "Unica One";
+
+}
+
+
+
+#arrow_pollution{
+    width: 25px;
+    height: 20px;
+    top: 50px;
+    left: 550px;
+    position: absolute;
+  
+
+}
+
+
+#poll_cloud_1{
+    top: 80px;
+    left: 635px;
+    width:80px;
+    height: 80px;
+    position: absolute;
+  
+  }
+
+
+  .poll_p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Space Mono";
+}
+
+.poll_info{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Space Mono";
+    color: white;
+    margin-top: 100px;
+
+}
+
+#line_poll{
+    width: 500px;
+    height: 50px;
+    left: 420px;
+    position:absolute;
+
+}
