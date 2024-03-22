@@ -1,0 +1,84 @@
+.page {
+  background: linear-gradient(180deg, #2F50A5 0%, #F6C699 97.56%);
+  border-radius: 0px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.widget {
+  margin-bottom: 20px; /* Add margin between widgets */
+}
+
+.box {
+  width: 90%; /* Adjust width to fit smaller screens */
+  max-width: 350px; /* Set maximum width */
+}
+
+.rectangle {
+  background-color: #48319d66;
+  border-radius: 25px;
+  padding: 10px; /* Add padding for content */
+}
+
+.title {
+  color: #fffdfd;
+  font-family: "Jura-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+   /* Adjust margin for smaller screens */
+}
+
+.opening,
+.close,
+.popular {
+  color: #fff; /* Set text color */
+  font-size: 14px; /* Set font size */
+  padding: 5px; /* Add padding */
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column; /* Display opening and closing hours vertically */
+  margin-bottom: 10px; /* Add margin between opening and closing hours */
+}
+
+.opening::before,
+.close::before,
+.popular::before {
+  content: attr(data-label);
+  font-weight: bold;
+  margin-bottom: 5px; /* Add margin between label and time */
+}
+
+/*customizing the dropdown to select day*/
+.select-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.select-container select {
+  width: 100%; /* Make the select fill its container */
+  max-width: 250px; /* Set maximum width */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  appearance: none; /* Remove default arrow */
+  cursor: pointer;
+}
+
+.select-container select:focus {
+  outline: none;
+}
+
+.select-container select option {
+  padding: 10px;
+}
